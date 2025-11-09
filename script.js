@@ -1,4 +1,4 @@
-// basic pomodoro timer made by me :)
+
 
 document.addEventListener("DOMContentLoaded", () => {
     let workMinutes = 25;
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let secs = timeLeft % 60;
 
         if (secs < 10) secs = "0" + secs;
-        if (mins < 10) mins = mins; // keep minutes as-is (e.g., 5:00 not 05:00)
+        if (mins < 10) mins = mins; // keep minutes as it is (e.g., 5:00 not 05:00)
         display.textContent = `${mins}:${secs}`;
     }
 
